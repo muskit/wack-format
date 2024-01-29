@@ -4,7 +4,7 @@ Currently in early stage. Details like package topology and .mer tags may change
 # Topology
 **A song is packaged as a folder**. Songs can be nested in subfolders for organization purposes. However, a single file -- `meta.mer` -- must be present to define its folder as a song (detailed later).
 
-To represent a song as a single file, that folder can be placed in a zip file with the extension `.wack`. That `.wack` can contain multiple songs, also in nested folders.
+To represent a song as a single file, that folder can be placed in a zip file with the extension `.wack`. Such files may contain multiple songs, also nested in subfolders.
 
 ## Song Folder Contents
 ```
