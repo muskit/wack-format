@@ -1,5 +1,5 @@
 # 🏗 UNDER CONSTRUCTION
-Currently in early stage. Details like package topology and .mer tags may change!
+Currently in early stage. Details like package topology and .mer tags may change! Check commit history to see what's changed.
 
 # Topology
 **A song is packaged as a folder**. Songs can be nested in subfolders for organization purposes. However, a single file -- `meta.mer` -- must be present to define its folder as a song (detailed later).
