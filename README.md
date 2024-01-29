@@ -21,8 +21,8 @@ To represent a song as a single file, that folder can be placed in a zip file wi
 # .mer Files
 There are two types of .mer files in a song: *metadata* and *charts*. Both types are detailed in the following subsections.
 
-> [!IMPORTANT]
-> For any .mer file, **any tag not defined here may be added**. Please keep this in mind when consuming these files.
+> [!WARNING]
+> For any .mer file, **tags not defined here may be added**. Please keep this in mind when consuming.
 
 ## meta.mer
 **This file must be present to define its folder as a song.**
