@@ -1,12 +1,21 @@
 # 🏗 UNDER CONSTRUCTION
-= Currently in early stage development
-- **Details like package topology and .mer tags may change!!**
-- Check commit history to see what's changed
+This format is still being developed.
+- Details like package topology and .mer tags are not final!!
+- Check commit history to see changes
+
+# wack Format
+This document details the specifications of the "wack" package for containing a song's *audio*, *metadata*, and *charting* information.
+
+# Table of Contents
+1. [Topology](#topology)
+    - [Song Folder Contents](#song-folder-contents)
+    - [.wack Package File](#wack-package-file)
+2. [mer Files](#mer-files)
+    - [metadata .mer](#metadata-mer)
+    - [Chart .mer](#chart-mer)
 
 # Topology
 **A song is packaged as a folder**. Songs can be nested in subfolders for organization purposes. However, a single file -- `meta.mer` -- must be present to define its folder as a song (detailed later).
-
-To represent a song as a single file, that folder can be placed in a zip file with the extension `.wack`. Such files may contain multiple songs, also nested in subfolders.
 
 ## Song Folder Contents
 ```
@@ -19,15 +28,19 @@ To represent a song as a single file, that folder can be placed in a zip file wi
 ├─ jacket.png/.jpg
 ├─ *.mp3/.ogg/.wav //SONG AUDIO
 ```
+**TODO**: .hca audio
+
+## .wack Package File
+**A directory structure of song folders may placed into a zip file with the extension `.wack` for transferring purposes.** Applications implementing this format may accept .wack files, but it is advisable to store the song folders contained (with structure preserved) in the long-term.
 
 # .mer Files
 There are two types of .mer files in a song: *metadata* and *charts*. Both types are detailed in the following subsections.
 
 > [!WARNING]
-> For any .mer file, **tags not defined here may be added**. Please keep this in mind when consuming.
+> For any .mer file, **tags not defined in this document may be added**. Tags may also be stored out of order. Please keep this in mind when consuming.
 
-## meta.mer
-**This file must be present to define its folder as a song.**
+## Metadata .mer
+**This file, named `meta.mer`, must be present to define its folder as a song.**
 
 Everything here only dictates how the song is displayed in song select; none of these tags affect gameplay in any of the song's charts.
 
@@ -42,7 +55,7 @@ Everything here only dictates how the song is displayed in song select; none of 
 - `#COPYRIGHT` str?
   - a carry-over from WACCA
   - can be used for sub-text not related to copyright
-  - **DELIBERATION NEEDED**: rename to `#SUBTEXT`?
+  - **TODO**: rename to `#SUBTEXT`? deliberation needed
 - `#GENRE` str?
   - a carry-over from WACCA
 - `#BPM` str
