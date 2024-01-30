@@ -3,8 +3,10 @@ This format is still being developed.
 - Details like package topology and .mer tags are not final!!
 - Check commit history to see changes
 
-# wack Format
-This document details the specifications of the "wack" package for containing a song's *audio*, *metadata*, and *charting* information.
+# Abstract
+This document details the specifications of the "wack" package containing a song's media, metadata, and charting information.
+
+The goal of this format is to contain enough information for a song to be used in WACCA as well as simulators/clones.
 
 # Table of Contents
 1. [Topology](#topology)
