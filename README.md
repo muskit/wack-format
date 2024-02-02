@@ -86,7 +86,6 @@ Everything here only dictates how the song is displayed in song select; none of 
 - `#LEVEL` float
 - `#AUDIO` str
   - name of audio file containing music for this chart
-- `#OFFSET` float
 - `#CLEAR_THRESHOLD` float
   - WACCA carry-over; minimum health needed to clear this chart
   - must be in range 0-1 inclusive
@@ -96,8 +95,9 @@ Everything here only dictates how the song is displayed in song select; none of 
   - time which the song preview starts
 - `#PREVIEW_DURATION` float
 - `#MOVIE <str?>` str?
-  - **ORIGINAL TAG**
   - name of background video file to play
+- `#OFFSET` float
+  - **ORIGINAL TAG**
 - `#MOVIEOFFSET` float?
   - **ORIGINAL TAG**
 - `#BODY`
@@ -107,4 +107,4 @@ Everything here only dictates how the song is displayed in song select; none of 
 *`?` = tag is optional
 
 > [!IMPORTANT]
-> For compatibility reasons, the tags defined here are used **in addition to the original chart format's tags**.
+> For compatibility reasons, the tags defined here are used **in addition to the original** chart format's tags.
