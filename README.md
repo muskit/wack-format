@@ -2,6 +2,7 @@
 This format is still being developed.
 - Details like package topology and .mer tags are not final!!
 - Check commit history to see changes
+- Developed by muskit and Yasu3D
 
 # Abstract
 This document details the specifications of the "wack" package containing a song's media, metadata, and charting information.
